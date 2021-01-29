@@ -1,1 +1,7 @@
 {% extends "digital-land-frontend/page-per-thing/index.html" %}
+
+{% block indexList -%}
+{{ dlIndexList({
+  "items": index.groups["no-organisation"]["items"]
+}) }}
+{%- endblock %}
