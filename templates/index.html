@@ -1,11 +1,11 @@
 {% extends "digital-land-frontend/page-per-thing/index.html" %}
 
 {% block indexDescription -%}
-<p class="govuk-body">Showing {{ index['count'] }} permitted development records.</p>
+<p class="govuk-body">Showing {{ count }} permitted development records.</p>
 {%- endblock %}
 
 {% block indexList -%}
 {{ dlIndexList({
-  "items": index.groups["no-organisation"]["items"]
+  "items": items
 }) }}
 {%- endblock %}
