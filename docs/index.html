@@ -4,35 +4,23 @@
     <meta charset="utf-8">
     <title>Permitted-development-right | Digital Land</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#0b0c0c"> 
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#0b0c0c">     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    
       <link rel="manifest" href="/site.webmanifest">
       <link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
       <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
       <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
       <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-    
 
-    
-
-	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
-	<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
-    
-    
+    <meta name="dl-template" content="dlf-base.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
     <meta property="og:image" content="/images/govuk-opengraph-image.png">
   </head>
   <body class="govuk-template__body ">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
-    
 
-    
       <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
-    
 
-    
 <!-- Cookie banner partial version 1.0.1 -->
 <div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
 
@@ -60,18 +48,14 @@
     <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
   </div>
 
-</div>
-
-
-<header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
+</div><header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
   <div class="govuk-header__container govuk-width-container">
     <div class="header-proposition">
       <div class="govuk-header__content">
         <a href="https://digital-land.github.io/" class="govuk-header__link govuk-header__link--service-name">
         Digital Land
         </a>
-        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
-        <nav>
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>        <nav>
           <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
             <li class="govuk-header__navigation-item">
               <a class="govuk-header__link" href="/about">Team</a>
@@ -99,17 +83,12 @@
             </li>
           </ul>
         </nav>
-        </div>
+</div>
     </div>
   </div>
 </header>
 
-
-
-    
       <div class="govuk-width-container ">
-        
-  
 <div class="govuk-phase-banner">
   <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
   prototype
@@ -117,204 +96,860 @@
       This is a prototype. Please provide feedback to the Digital Land team.
     </span>
   </p>
-</div>
-  
-<div class="govuk-breadcrumbs ">
+</div><div class="govuk-breadcrumbs ">
   <ol class="govuk-breadcrumbs__list">
-  
-    
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="/">Digital Land</a>
     </li>
-    
-  
-    
     <li class="govuk-breadcrumbs__list-item" aria-current="page">permitted-development-right</li>
-    
-  
   </ol>
-</div>
-        <main class="govuk-main-wrapper " id="main-content" role="main">
-          
+</div>        <main class="govuk-main-wrapper " id="main-content" role="main">
 
 <h1 class="govuk-heading-xl">Permitted development right</h1>
+            <div class="govuk-!-margin-bottom-9" style="margin-top: -15px;">
+                <a class="dl-page-action-button" href="https://raw.githubusercontent.com/digital-land/permitted-development-right/main/dataset/permitted-development-right.csv">Download dataset</a>
+            </div>
 
-<div class="govuk-!-margin-bottom-9" style="margin-top: -15px;">
-    <a class="dl-page-action-button" href="https://raw.githubusercontent.com/digital-land/permitted-development-right/main/dataset/permitted-development-right.csv">Download dataset</a>
-</div>
+    <form class="filter-organisations-list__form filter-organisations-list__form--active govuk-!-margin-bottom-9" data-filter="form">
+        <label class="filter-list__label govuk-label govuk-!-font-weight-bold" for="filter-organisations-list">I'm looking for</label>
+        <input class="filter-list__input govuk-input" type="text" id="filter-organisations-list" placeholder="For example, Harrogate Borough Council">
+    </form>
 
-
+    <div class="js-no-filter-list-matches"><p class="govuk-body">No matches.</p></div> <!-- needs to go outside of index-list-wrapper -->
+    <div class="index-list-wrapper">
 <p class="govuk-body">Showing 114 permitted development records.</p>
-
-
-<div class="dl-index-grid"><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="1A">1A</a></h4>
-  <p class="dl-index-item__body govuk-body">Enlargement, improvement or other alteration of a dwellinghouse</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="1B">1B</a></h4>
-  <p class="dl-index-item__body govuk-body">Additions etc to the roof of a dwellinghouse</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="1C">1C</a></h4>
-  <p class="dl-index-item__body govuk-body">Other alterations to the roof of a dwellinghouse</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="1D">1D</a></h4>
-  <p class="dl-index-item__body govuk-body">Porches</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="1E">1E</a></h4>
-  <p class="dl-index-item__body govuk-body">Buildings etc incidental to the enjoyment of a dwellinghouse</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="1F">1F</a></h4>
-  <p class="dl-index-item__body govuk-body">Hard surfaces incidental to the enjoyment of a dwellinghouse</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="1G">1G</a></h4>
-  <p class="dl-index-item__body govuk-body">Chimneys, flues etc on a dwellinghouse</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="1H">1H</a></h4>
-  <p class="dl-index-item__body govuk-body">Microwave antenna on a dwellinghouse</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="2A">2A</a></h4>
-  <p class="dl-index-item__body govuk-body">Gates, fences, walls etc</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="2B">2B</a></h4>
-  <p class="dl-index-item__body govuk-body">Means of access to a highway</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="2C">2C</a></h4>
-  <p class="dl-index-item__body govuk-body">Exterior painting</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="2D">2D</a></h4>
-  <p class="dl-index-item__body govuk-body">Electrical outlet for recharging vehicles</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="2E">2E</a></h4>
-  <p class="dl-index-item__body govuk-body">Electrical upstand for recharging vehicles</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="2F">2F</a></h4>
-  <p class="dl-index-item__body govuk-body">Closed circuit television cameras</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="3A">3A</a></h4>
-  <p class="dl-index-item__body govuk-body">Restaurants, cafes, takeaways or pubs to retail</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="3B">3B</a></h4>
-  <p class="dl-index-item__body govuk-body">Takeaways or pubs to restaurants and cafes</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="3C">3C</a></h4>
-  <p class="dl-index-item__body govuk-body">Retail, betting office or pay day loan shop or casino to restaurant or cafe</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="3D">3D</a></h4>
-  <p class="dl-index-item__body govuk-body">Shops to financial and professional</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="3E">3E</a></h4>
-  <p class="dl-index-item__body govuk-body">Financial and professional or betting office or pay day loan shop to shops</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="3F">3F</a></h4>
-  <p class="dl-index-item__body govuk-body">Betting offices or pay day loan shops to financial and professional</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="3K">3K</a></h4>
-  <p class="dl-index-item__body govuk-body">Casinos to assembly and leisure</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="3O">3O</a></h4>
-  <p class="dl-index-item__body govuk-body">Offices to dwellinghouses</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="3P">3P</a></h4>
-  <p class="dl-index-item__body govuk-body">Storage or distribution centre to dwellinghouses</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="3R">3R</a></h4>
-  <p class="dl-index-item__body govuk-body">Agricultural buildings to a flexible commercial use</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="3S">3S</a></h4>
-  <p class="dl-index-item__body govuk-body">Agricultural buildings to state-funded school or registered nursery</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="3T">3T</a></h4>
-  <p class="dl-index-item__body govuk-body">Business, hotels etc to state-funded schools or registered nursery</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="3U">3U</a></h4>
-  <p class="dl-index-item__body govuk-body">Return to previous use from converted state-funded school or registered nursery</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="3V">3V</a></h4>
-  <p class="dl-index-item__body govuk-body">Changes of use permitted under a permission granted on an application</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="4A">4A</a></h4>
-  <p class="dl-index-item__body govuk-body">Temporary buildings and structures</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="4C">4C</a></h4>
-  <p class="dl-index-item__body govuk-body">Use as a state-funded school for a single academic year</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="4D">4D</a></h4>
-  <p class="dl-index-item__body govuk-body">Shops, financial, cafes, takeaways, pubs etc to temporary flexible use</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="4E">4E</a></h4>
-  <p class="dl-index-item__body govuk-body">Temporary use of buildings or land for film-making purposes</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="5A">5A</a></h4>
-  <p class="dl-index-item__body govuk-body">Use of land as caravan site</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="5B">5B</a></h4>
-  <p class="dl-index-item__body govuk-body">Development on caravan site required by conditions</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="5C">5C</a></h4>
-  <p class="dl-index-item__body govuk-body">Use of land by members of certain recreational organisations</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="6C">6C</a></h4>
-  <p class="dl-index-item__body govuk-body">Mineral working for agricultural purposes</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="7A">7A</a></h4>
-  <p class="dl-index-item__body govuk-body">Extensions etc of shops or financial or professional premises</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="7B">7B</a></h4>
-  <p class="dl-index-item__body govuk-body">Construction of shop trolley stores</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="7C">7C</a></h4>
-  <p class="dl-index-item__body govuk-body">Click and collect facilities</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="7D">7D</a></h4>
-  <p class="dl-index-item__body govuk-body">Modification of shop loading bays</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="7F">7F</a></h4>
-  <p class="dl-index-item__body govuk-body">Extensions etc of office buildings</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="7H">7H</a></h4>
-  <p class="dl-index-item__body govuk-body">Extensions etc of industrial and warehouse</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="7I">7I</a></h4>
-  <p class="dl-index-item__body govuk-body">Developments relating to an industrial process</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="7K">7K</a></h4>
-  <p class="dl-index-item__body govuk-body">Waste deposits from an industrial process</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="7M">7M</a></h4>
-  <p class="dl-index-item__body govuk-body">Extensions etc for schools, colleges, universities and hospitals</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="8A">8A</a></h4>
-  <p class="dl-index-item__body govuk-body">Railway or light railway undertakings</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="8B">8B</a></h4>
-  <p class="dl-index-item__body govuk-body">Dock, pier, harbour, water transport, canal or inland navigation undertakings</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="8C">8C</a></h4>
-  <p class="dl-index-item__body govuk-body">Works to inland waterways</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="8D">8D</a></h4>
-  <p class="dl-index-item__body govuk-body">Dredging by transport undertakings</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="8E">8E</a></h4>
-  <p class="dl-index-item__body govuk-body">Development for the aid of shipping</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="8F">8F</a></h4>
-  <p class="dl-index-item__body govuk-body">Development at an airport</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="8G">8G</a></h4>
-  <p class="dl-index-item__body govuk-body">Air traffic services development at an airport</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="8H">8H</a></h4>
-  <p class="dl-index-item__body govuk-body">Air traffic services development near an airport</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="8I">8I</a></h4>
-  <p class="dl-index-item__body govuk-body">Development by an air traffic services licence holder within an airport</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="8J">8J</a></h4>
-  <p class="dl-index-item__body govuk-body">Development by an air traffic services licence holder on operational land</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="8K">8K</a></h4>
-  <p class="dl-index-item__body govuk-body">Development by an air traffic services licence holder in an emergency</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="8L">8L</a></h4>
-  <p class="dl-index-item__body govuk-body">Development by an air traffic services licence holder involving moveable structures</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="8M">8M</a></h4>
-  <p class="dl-index-item__body govuk-body">Development by the Civil Aviation Authority for surveys etc</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="8N">8N</a></h4>
-  <p class="dl-index-item__body govuk-body">Use of airport buildings managed by relevant airport operators</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="9B">9B</a></h4>
-  <p class="dl-index-item__body govuk-body">Development by the Secretary of State or a strategic highways company under the Highways Act 1980</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="9E">9E</a></h4>
-  <p class="dl-index-item__body govuk-body">Repairs to unadopted streets and private ways</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="10A">10A</a></h4>
-  <p class="dl-index-item__body govuk-body">Repairs to services</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="11B">11B</a></h4>
-  <p class="dl-index-item__body govuk-body">Demolition of buildings</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="11C">11C</a></h4>
-  <p class="dl-index-item__body govuk-body">Demolition of gates, fences, walls etc</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="12A">12A</a></h4>
-  <p class="dl-index-item__body govuk-body">Erection or construction and the maintenance, improvement or other alteration by a local authority or by an urban development corporation</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="12B">12B</a></h4>
-  <p class="dl-index-item__body govuk-body">Deposit of waste material</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="13A">13A</a></h4>
-  <p class="dl-index-item__body govuk-body">Water or hydraulic power undertakings</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="13B">13B</a></h4>
-  <p class="dl-index-item__body govuk-body">Development by or on behalf of sewerage undertakers</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="13C">13C</a></h4>
-  <p class="dl-index-item__body govuk-body">Development by drainage bodies</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="13D">13D</a></h4>
-  <p class="dl-index-item__body govuk-body">Development by the Environment Agency</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="14B">14B</a></h4>
-  <p class="dl-index-item__body govuk-body">Installation or alteration etc of stand-alone solar equipment on domestic premises</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="14C">14C</a></h4>
-  <p class="dl-index-item__body govuk-body">Installation or alteration etc of ground source heat pumps on domestic premises</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="14D">14D</a></h4>
-  <p class="dl-index-item__body govuk-body">Installation or alteration etc of water source heat pumps on domestic premises</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="14E">14E</a></h4>
-  <p class="dl-index-item__body govuk-body">Installation or alteration etc of flue for biomass heating system on domestic premises</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="14F">14F</a></h4>
-  <p class="dl-index-item__body govuk-body">Installation or alteration etc of flue for combined heat and power on domestic premises</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="14I">14I</a></h4>
-  <p class="dl-index-item__body govuk-body">Installation or alteration etc of stand-alone wind turbine on domestic premises</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="14L">14L</a></h4>
-  <p class="dl-index-item__body govuk-body">Installation or alteration etc of ground source heat pump on non-domestic premises</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="14M">14M</a></h4>
-  <p class="dl-index-item__body govuk-body">Installation or alteration etc of water source heat pump on non-domestic premises</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="15A">15A</a></h4>
-  <p class="dl-index-item__body govuk-body">Gas transporters</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="15B">15B</a></h4>
-  <p class="dl-index-item__body govuk-body">Electricity undertakings</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="16B">16B</a></h4>
-  <p class="dl-index-item__body govuk-body">Other telecommunications development</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="16C">16C</a></h4>
-  <p class="dl-index-item__body govuk-body">Other telecommunications development: microwave antenna</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="16D">16D</a></h4>
-  <p class="dl-index-item__body govuk-body">Driver information systems</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="16E">16E</a></h4>
-  <p class="dl-index-item__body govuk-body">Universal postal service providers</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="17A">17A</a></h4>
-  <p class="dl-index-item__body govuk-body">Extensions, alterations etc ancillary to mining operations</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="17C">17C</a></h4>
-  <p class="dl-index-item__body govuk-body">Developments for maintenance or safety</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="17F">17F</a></h4>
-  <p class="dl-index-item__body govuk-body">Coal-mining development on an authorised site</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="17G">17G</a></h4>
-  <p class="dl-index-item__body govuk-body">Coal-mining development by the Coal Authority etc for maintenance or safety</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="17H">17H</a></h4>
-  <p class="dl-index-item__body govuk-body">Waste tipping at a mine</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="17I">17I</a></h4>
-  <p class="dl-index-item__body govuk-body">Waste tipping from a mine on sites used since 1948</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="17J">17J</a></h4>
-  <p class="dl-index-item__body govuk-body">Temporary use of land etc for mineral exploration</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="17K">17K</a></h4>
-  <p class="dl-index-item__body govuk-body">Use of land etc for mineral exploration</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="17L">17L</a></h4>
-  <p class="dl-index-item__body govuk-body">Removal of material from a stockpile</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="17M">17M</a></h4>
-  <p class="dl-index-item__body govuk-body">Removal of material from mineral-working deposits</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="18A">18A</a></h4>
-  <p class="dl-index-item__body govuk-body">Development under local or private Acts or Order</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="18B">18B</a></h4>
-  <p class="dl-index-item__body govuk-body">Development at amusement parks</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="19A">19A</a></h4>
-  <p class="dl-index-item__body govuk-body">General development by the Crown</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="19B">19B</a></h4>
-  <p class="dl-index-item__body govuk-body">Extension or alteration of an operational Crown building</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="19C">19C</a></h4>
-  <p class="dl-index-item__body govuk-body">Developments on operational Crown land</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="19D">19D</a></h4>
-  <p class="dl-index-item__body govuk-body">Hard surfaces for operational Crown buildings</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="19E">19E</a></h4>
-  <p class="dl-index-item__body govuk-body">Development on operational Crown land relating to an airbase</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="19F">19F</a></h4>
-  <p class="dl-index-item__body govuk-body">Development on operational land within an airbase</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="19G">19G</a></h4>
-  <p class="dl-index-item__body govuk-body">Development on operational land outside an airbase</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="19H">19H</a></h4>
-  <p class="dl-index-item__body govuk-body">Development on operational land by the Crown connected with air traffic services</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="19I">19I</a></h4>
-  <p class="dl-index-item__body govuk-body">Emergency use of land by the Crown connected with air traffic services</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="19J">19J</a></h4>
-  <p class="dl-index-item__body govuk-body">Use of land etc by the Crown connected with air traffic services</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="19K">19K</a></h4>
-  <p class="dl-index-item__body govuk-body">Use of land by the Crown in relation to surveys etc</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="19L">19L</a></h4>
-  <p class="dl-index-item__body govuk-body">Use of buildings by the Crown on an airbase connected to air transport services etc</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="19M">19M</a></h4>
-  <p class="dl-index-item__body govuk-body">Development by the Crown on operational Crown land connected to rail</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="19N">19N</a></h4>
-  <p class="dl-index-item__body govuk-body">Development by the Crown on operational Crown land connected to shipping etc</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="19O">19O</a></h4>
-  <p class="dl-index-item__body govuk-body">Use of land by the Crown for spreading of dredged material</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="19P">19P</a></h4>
-  <p class="dl-index-item__body govuk-body">Development by the Crown on operational Crown land etc relating to aids to shipping</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="19R">19R</a></h4>
-  <p class="dl-index-item__body govuk-body">Erection etc of gates, fences etc by the Crown for national security purposes</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="19S">19S</a></h4>
-  <p class="dl-index-item__body govuk-body">Closed circuit television cameras for national security purposes</p></div>
-
-
+<table class="dl-index-list">
+  <tbody><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./1A">1A</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Enlargement, improvement or other alteration of a dwellinghouse</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./1B">1B</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Additions etc to the roof of a dwellinghouse</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./1C">1C</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Other alterations to the roof of a dwellinghouse</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./1D">1D</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Porches</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./1E">1E</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Buildings etc incidental to the enjoyment of a dwellinghouse</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./1F">1F</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Hard surfaces incidental to the enjoyment of a dwellinghouse</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./1G">1G</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Chimneys, flues etc on a dwellinghouse</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./1H">1H</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Microwave antenna on a dwellinghouse</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./2A">2A</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Gates, fences, walls etc</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./2B">2B</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Means of access to a highway</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./2C">2C</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Exterior painting</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./2D">2D</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Electrical outlet for recharging vehicles</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./2E">2E</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Electrical upstand for recharging vehicles</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./2F">2F</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Closed circuit television cameras</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./3A">3A</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Restaurants, cafes, takeaways or pubs to retail</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./3B">3B</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Takeaways or pubs to restaurants and cafes</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./3C">3C</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Retail, betting office or pay day loan shop or casino to restaurant or cafe</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./3D">3D</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Shops to financial and professional</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./3E">3E</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Financial and professional or betting office or pay day loan shop to shops</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./3F">3F</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Betting offices or pay day loan shops to financial and professional</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./3K">3K</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Casinos to assembly and leisure</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./3O">3O</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Offices to dwellinghouses</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./3P">3P</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Storage or distribution centre to dwellinghouses</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./3R">3R</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Agricultural buildings to a flexible commercial use</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./3S">3S</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Agricultural buildings to state-funded school or registered nursery</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./3T">3T</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Business, hotels etc to state-funded schools or registered nursery</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./3U">3U</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Return to previous use from converted state-funded school or registered nursery</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./3V">3V</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Changes of use permitted under a permission granted on an application</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./4A">4A</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Temporary buildings and structures</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./4C">4C</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Use as a state-funded school for a single academic year</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./4D">4D</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Shops, financial, cafes, takeaways, pubs etc to temporary flexible use</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./4E">4E</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Temporary use of buildings or land for film-making purposes</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./5A">5A</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Use of land as caravan site</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./5B">5B</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Development on caravan site required by conditions</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./5C">5C</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Use of land by members of certain recreational organisations</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./6C">6C</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Mineral working for agricultural purposes</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./7A">7A</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Extensions etc of shops or financial or professional premises</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./7B">7B</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Construction of shop trolley stores</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./7C">7C</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Click and collect facilities</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./7D">7D</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Modification of shop loading bays</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./7F">7F</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Extensions etc of office buildings</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./7H">7H</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Extensions etc of industrial and warehouse</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./7I">7I</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Developments relating to an industrial process</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./7K">7K</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Waste deposits from an industrial process</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./7M">7M</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Extensions etc for schools, colleges, universities and hospitals</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./8A">8A</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Railway or light railway undertakings</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./8B">8B</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Dock, pier, harbour, water transport, canal or inland navigation undertakings</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./8C">8C</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Works to inland waterways</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./8D">8D</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Dredging by transport undertakings</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./8E">8E</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Development for the aid of shipping</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./8F">8F</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Development at an airport</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./8G">8G</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Air traffic services development at an airport</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./8H">8H</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Air traffic services development near an airport</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./8I">8I</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Development by an air traffic services licence holder within an airport</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./8J">8J</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Development by an air traffic services licence holder on operational land</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./8K">8K</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Development by an air traffic services licence holder in an emergency</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./8L">8L</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Development by an air traffic services licence holder involving moveable structures</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./8M">8M</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Development by the Civil Aviation Authority for surveys etc</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./8N">8N</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Use of airport buildings managed by relevant airport operators</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./9B">9B</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Development by the Secretary of State or a strategic highways company under the Highways Act 1980</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./9E">9E</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Repairs to unadopted streets and private ways</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./10A">10A</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Repairs to services</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./11B">11B</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Demolition of buildings</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./11C">11C</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Demolition of gates, fences, walls etc</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./12A">12A</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Erection or construction and the maintenance, improvement or other alteration by a local authority or by an urban development corporation</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./12B">12B</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Deposit of waste material</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./13A">13A</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Water or hydraulic power undertakings</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./13B">13B</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Development by or on behalf of sewerage undertakers</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./13C">13C</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Development by drainage bodies</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./13D">13D</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Development by the Environment Agency</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./14B">14B</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Installation or alteration etc of stand-alone solar equipment on domestic premises</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./14C">14C</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Installation or alteration etc of ground source heat pumps on domestic premises</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./14D">14D</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Installation or alteration etc of water source heat pumps on domestic premises</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./14E">14E</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Installation or alteration etc of flue for biomass heating system on domestic premises</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./14F">14F</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Installation or alteration etc of flue for combined heat and power on domestic premises</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./14I">14I</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Installation or alteration etc of stand-alone wind turbine on domestic premises</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./14L">14L</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Installation or alteration etc of ground source heat pump on non-domestic premises</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./14M">14M</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Installation or alteration etc of water source heat pump on non-domestic premises</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./15A">15A</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Gas transporters</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./15B">15B</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Electricity undertakings</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./16B">16B</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Other telecommunications development</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./16C">16C</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Other telecommunications development: microwave antenna</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./16D">16D</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Driver information systems</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./16E">16E</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Universal postal service providers</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./17A">17A</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Extensions, alterations etc ancillary to mining operations</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./17C">17C</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Developments for maintenance or safety</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./17F">17F</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Coal-mining development on an authorised site</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./17G">17G</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Coal-mining development by the Coal Authority etc for maintenance or safety</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./17H">17H</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Waste tipping at a mine</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./17I">17I</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Waste tipping from a mine on sites used since 1948</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./17J">17J</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Temporary use of land etc for mineral exploration</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./17K">17K</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Use of land etc for mineral exploration</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./17L">17L</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Removal of material from a stockpile</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./17M">17M</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Removal of material from mineral-working deposits</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./18A">18A</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Development under local or private Acts or Order</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./18B">18B</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Development at amusement parks</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./19A">19A</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">General development by the Crown</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./19B">19B</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Extension or alteration of an operational Crown building</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./19C">19C</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Developments on operational Crown land</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./19D">19D</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Hard surfaces for operational Crown buildings</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./19E">19E</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Development on operational Crown land relating to an airbase</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./19F">19F</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Development on operational land within an airbase</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./19G">19G</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Development on operational land outside an airbase</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./19H">19H</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Development on operational land by the Crown connected with air traffic services</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./19I">19I</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Emergency use of land by the Crown connected with air traffic services</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./19J">19J</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Use of land etc by the Crown connected with air traffic services</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./19K">19K</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Use of land by the Crown in relation to surveys etc</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./19L">19L</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Use of buildings by the Crown on an airbase connected to air transport services etc</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./19M">19M</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Development by the Crown on operational Crown land connected to rail</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./19N">19N</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Development by the Crown on operational Crown land connected to shipping etc</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./19O">19O</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Use of land by the Crown for spreading of dredged material</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./19P">19P</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Development by the Crown on operational Crown land etc relating to aids to shipping</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./19R">19R</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Erection etc of gates, fences etc by the Crown for national security purposes</p>
+  </td>
+</tr><tr>
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./19S">19S</a></h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0">Closed circuit television cameras for national security purposes</p>
+  </td>
+</tr></tbody>
+</table>
+    </div>
 
         </main>
       </div>
-    
-
-    
-  
-
-
-
-
-
 
 
 <footer class="govuk-footer " role="contentinfo"
-        >
+>
   <div class="govuk-width-container ">
-    
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
-        
-          <h2 class="govuk-visually-hidden">Support links</h2>
-              <ul class="govuk-footer__inline-list">
-                
+          <h2 class="govuk-visually-hidden">Support links</h2>              <ul class="govuk-footer__inline-list">
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/cookies">
                       Cookies
                     </a>
                   </li>
-                
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/accessibility-statement">
                       Accessibility statement
                     </a>
                   </li>
-                
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/design-system">
                       Design system
                     </a>
                   </li>
-                
               </ul>
-            
-          
-          
             <div class="govuk-footer__meta-custom">
               The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
             </div>
-          
-        
         <svg
           role="presentation"
           focusable="false"
@@ -347,13 +982,9 @@
     </div>
   </div>
 </footer>
-
-
-    
-<script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
+    <script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
 	<script async src='https://www.google-analytics.com/analytics.js'></script>
 	<!-- end google analytics -->
-	
 
 	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
 	<script>
@@ -361,18 +992,23 @@
 		window.GOVUKFrontend.initAll();
 	</script>
 
-	
-	
 	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
 	<script>
 		// adds any necessary polyfills
 		window.DLFrontend.polyfill();
 	</script>
-	
 
 
 
 
+        <script>
+        // initialise list filter
+        const $form = document.querySelector('[data-filter="form"]');
+        new window.DLFrontend.FilterList($form).init({
+            list_section_selector: '.index-list-wrapper',
+            count_wrapper_selector: '.count-wrapper'
+        })
+        </script>
 
   </body>
 </html>
