@@ -1,11 +1,7 @@
 {% extends "digital-land-frontend/page-per-thing/index.html" %}
 
+{% set filterInputPlaceholder = "For example, air traffic services" %}
+
 {% block indexDescription -%}
 <p class="govuk-body">Showing {{ count }} permitted development records.</p>
-{%- endblock %}
-
-{% block indexList -%}
-{{ dlIndexList({
-  "items": items
-}) }}
 {%- endblock %}
