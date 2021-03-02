@@ -116,11 +116,28 @@
     </form>
     <div class="js-no-filter-list-matches"><p class="govuk-body">No matches.</p></div> <!-- needs to go outside of index-list-wrapper -->
 
-    <div class="index-list-wrapper">
-<p class="govuk-body">Showing 114 permitted development records.</p>
-            <table class="dl-index-list" data-filter="list">
+
+        <div class="index-list-wrapper">
+            <div class="count-wrapper">
+                <p class="govuk-body" aria-hidden="true">Showing <span class="js-list-count">114</span> records.</p>
+                <p class="govuk-visually-hidden">There are
+                    <span class="js-accessible-list-count">114</span>
+                    records listed.
+                </p>
+            </div>        <form action="" class="govuk-form govuk-!-margin-bottom-4 dl-historical-toggle-form js-hidden" data-historical="form">
+            <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="hsitorical" name="hsitorical" type="checkbox" value="show">
+                    <label class="govuk-label govuk-checkboxes__label" for="hsitorical">
+                    Show historical records
+                    </label>
+                </div>
+            </div>
+        </form>
+<table class="dl-index-list"
+ data-filter="list" data-historical='list'>
   <tbody>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./1A" data-filter="match-content">1A</a>
@@ -130,7 +147,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Enlargement, improvement or other alteration of a dwellinghouse</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./1B" data-filter="match-content">1B</a>
@@ -140,7 +157,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Additions etc to the roof of a dwellinghouse</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./1C" data-filter="match-content">1C</a>
@@ -150,7 +167,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Other alterations to the roof of a dwellinghouse</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./1D" data-filter="match-content">1D</a>
@@ -160,7 +177,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Porches</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./1E" data-filter="match-content">1E</a>
@@ -170,7 +187,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Buildings etc incidental to the enjoyment of a dwellinghouse</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./1F" data-filter="match-content">1F</a>
@@ -180,7 +197,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Hard surfaces incidental to the enjoyment of a dwellinghouse</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./1G" data-filter="match-content">1G</a>
@@ -190,7 +207,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Chimneys, flues etc on a dwellinghouse</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./1H" data-filter="match-content">1H</a>
@@ -200,7 +217,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Microwave antenna on a dwellinghouse</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./2A" data-filter="match-content">2A</a>
@@ -210,7 +227,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Gates, fences, walls etc</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./2B" data-filter="match-content">2B</a>
@@ -220,7 +237,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Means of access to a highway</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./2C" data-filter="match-content">2C</a>
@@ -230,7 +247,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Exterior painting</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./2D" data-filter="match-content">2D</a>
@@ -240,7 +257,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Electrical outlet for recharging vehicles</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./2E" data-filter="match-content">2E</a>
@@ -250,7 +267,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Electrical upstand for recharging vehicles</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./2F" data-filter="match-content">2F</a>
@@ -260,7 +277,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Closed circuit television cameras</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./3A" data-filter="match-content">3A</a>
@@ -270,7 +287,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Restaurants, cafes, takeaways or pubs to retail</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./3B" data-filter="match-content">3B</a>
@@ -280,7 +297,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Takeaways or pubs to restaurants and cafes</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./3C" data-filter="match-content">3C</a>
@@ -290,7 +307,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Retail, betting office or pay day loan shop or casino to restaurant or cafe</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./3D" data-filter="match-content">3D</a>
@@ -300,7 +317,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Shops to financial and professional</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./3E" data-filter="match-content">3E</a>
@@ -310,7 +327,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Financial and professional or betting office or pay day loan shop to shops</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./3F" data-filter="match-content">3F</a>
@@ -320,7 +337,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Betting offices or pay day loan shops to financial and professional</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./3K" data-filter="match-content">3K</a>
@@ -330,7 +347,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Casinos to assembly and leisure</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./3O" data-filter="match-content">3O</a>
@@ -340,7 +357,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Offices to dwellinghouses</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./3P" data-filter="match-content">3P</a>
@@ -350,7 +367,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Storage or distribution centre to dwellinghouses</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./3R" data-filter="match-content">3R</a>
@@ -360,7 +377,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Agricultural buildings to a flexible commercial use</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./3S" data-filter="match-content">3S</a>
@@ -370,7 +387,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Agricultural buildings to state-funded school or registered nursery</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./3T" data-filter="match-content">3T</a>
@@ -380,7 +397,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Business, hotels etc to state-funded schools or registered nursery</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./3U" data-filter="match-content">3U</a>
@@ -390,7 +407,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Return to previous use from converted state-funded school or registered nursery</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./3V" data-filter="match-content">3V</a>
@@ -400,7 +417,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Changes of use permitted under a permission granted on an application</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./4A" data-filter="match-content">4A</a>
@@ -410,7 +427,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Temporary buildings and structures</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./4C" data-filter="match-content">4C</a>
@@ -420,7 +437,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Use as a state-funded school for a single academic year</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./4D" data-filter="match-content">4D</a>
@@ -430,7 +447,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Shops, financial, cafes, takeaways, pubs etc to temporary flexible use</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./4E" data-filter="match-content">4E</a>
@@ -440,7 +457,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Temporary use of buildings or land for film-making purposes</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./5A" data-filter="match-content">5A</a>
@@ -450,7 +467,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Use of land as caravan site</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./5B" data-filter="match-content">5B</a>
@@ -460,7 +477,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Development on caravan site required by conditions</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./5C" data-filter="match-content">5C</a>
@@ -470,7 +487,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Use of land by members of certain recreational organisations</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./6C" data-filter="match-content">6C</a>
@@ -480,7 +497,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Mineral working for agricultural purposes</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./7A" data-filter="match-content">7A</a>
@@ -490,7 +507,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Extensions etc of shops or financial or professional premises</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./7B" data-filter="match-content">7B</a>
@@ -500,7 +517,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Construction of shop trolley stores</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./7C" data-filter="match-content">7C</a>
@@ -510,7 +527,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Click and collect facilities</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./7D" data-filter="match-content">7D</a>
@@ -520,7 +537,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Modification of shop loading bays</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./7F" data-filter="match-content">7F</a>
@@ -530,7 +547,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Extensions etc of office buildings</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./7H" data-filter="match-content">7H</a>
@@ -540,7 +557,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Extensions etc of industrial and warehouse</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./7I" data-filter="match-content">7I</a>
@@ -550,7 +567,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Developments relating to an industrial process</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./7K" data-filter="match-content">7K</a>
@@ -560,7 +577,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Waste deposits from an industrial process</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./7M" data-filter="match-content">7M</a>
@@ -570,7 +587,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Extensions etc for schools, colleges, universities and hospitals</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./8A" data-filter="match-content">8A</a>
@@ -580,7 +597,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Railway or light railway undertakings</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./8B" data-filter="match-content">8B</a>
@@ -590,7 +607,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Dock, pier, harbour, water transport, canal or inland navigation undertakings</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./8C" data-filter="match-content">8C</a>
@@ -600,7 +617,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Works to inland waterways</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./8D" data-filter="match-content">8D</a>
@@ -610,7 +627,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Dredging by transport undertakings</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./8E" data-filter="match-content">8E</a>
@@ -620,7 +637,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Development for the aid of shipping</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./8F" data-filter="match-content">8F</a>
@@ -630,7 +647,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Development at an airport</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./8G" data-filter="match-content">8G</a>
@@ -640,7 +657,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Air traffic services development at an airport</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./8H" data-filter="match-content">8H</a>
@@ -650,7 +667,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Air traffic services development near an airport</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./8I" data-filter="match-content">8I</a>
@@ -660,7 +677,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Development by an air traffic services licence holder within an airport</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./8J" data-filter="match-content">8J</a>
@@ -670,7 +687,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Development by an air traffic services licence holder on operational land</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./8K" data-filter="match-content">8K</a>
@@ -680,7 +697,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Development by an air traffic services licence holder in an emergency</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./8L" data-filter="match-content">8L</a>
@@ -690,7 +707,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Development by an air traffic services licence holder involving moveable structures</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./8M" data-filter="match-content">8M</a>
@@ -700,7 +717,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Development by the Civil Aviation Authority for surveys etc</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./8N" data-filter="match-content">8N</a>
@@ -710,7 +727,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Use of airport buildings managed by relevant airport operators</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./9B" data-filter="match-content">9B</a>
@@ -720,7 +737,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Development by the Secretary of State or a strategic highways company under the Highways Act 1980</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./9E" data-filter="match-content">9E</a>
@@ -730,7 +747,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Repairs to unadopted streets and private ways</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./10A" data-filter="match-content">10A</a>
@@ -740,7 +757,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Repairs to services</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./11B" data-filter="match-content">11B</a>
@@ -750,7 +767,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Demolition of buildings</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./11C" data-filter="match-content">11C</a>
@@ -760,7 +777,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Demolition of gates, fences, walls etc</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./12A" data-filter="match-content">12A</a>
@@ -770,7 +787,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Erection or construction and the maintenance, improvement or other alteration by a local authority or by an urban development corporation</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./12B" data-filter="match-content">12B</a>
@@ -780,7 +797,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Deposit of waste material</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13A" data-filter="match-content">13A</a>
@@ -790,7 +807,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Water or hydraulic power undertakings</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13B" data-filter="match-content">13B</a>
@@ -800,7 +817,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Development by or on behalf of sewerage undertakers</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13C" data-filter="match-content">13C</a>
@@ -810,7 +827,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Development by drainage bodies</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./13D" data-filter="match-content">13D</a>
@@ -820,7 +837,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Development by the Environment Agency</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14B" data-filter="match-content">14B</a>
@@ -830,7 +847,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Installation or alteration etc of stand-alone solar equipment on domestic premises</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14C" data-filter="match-content">14C</a>
@@ -840,7 +857,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Installation or alteration etc of ground source heat pumps on domestic premises</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14D" data-filter="match-content">14D</a>
@@ -850,7 +867,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Installation or alteration etc of water source heat pumps on domestic premises</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14E" data-filter="match-content">14E</a>
@@ -860,7 +877,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Installation or alteration etc of flue for biomass heating system on domestic premises</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14F" data-filter="match-content">14F</a>
@@ -870,7 +887,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Installation or alteration etc of flue for combined heat and power on domestic premises</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14I" data-filter="match-content">14I</a>
@@ -880,7 +897,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Installation or alteration etc of stand-alone wind turbine on domestic premises</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14L" data-filter="match-content">14L</a>
@@ -890,7 +907,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Installation or alteration etc of ground source heat pump on non-domestic premises</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./14M" data-filter="match-content">14M</a>
@@ -900,7 +917,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Installation or alteration etc of water source heat pump on non-domestic premises</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./15A" data-filter="match-content">15A</a>
@@ -910,7 +927,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Gas transporters</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./15B" data-filter="match-content">15B</a>
@@ -920,7 +937,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Electricity undertakings</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./16B" data-filter="match-content">16B</a>
@@ -930,7 +947,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Other telecommunications development</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./16C" data-filter="match-content">16C</a>
@@ -940,7 +957,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Other telecommunications development: microwave antenna</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./16D" data-filter="match-content">16D</a>
@@ -950,7 +967,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Driver information systems</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./16E" data-filter="match-content">16E</a>
@@ -960,7 +977,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Universal postal service providers</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./17A" data-filter="match-content">17A</a>
@@ -970,7 +987,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Extensions, alterations etc ancillary to mining operations</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./17C" data-filter="match-content">17C</a>
@@ -980,7 +997,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Developments for maintenance or safety</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./17F" data-filter="match-content">17F</a>
@@ -990,7 +1007,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Coal-mining development on an authorised site</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./17G" data-filter="match-content">17G</a>
@@ -1000,7 +1017,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Coal-mining development by the Coal Authority etc for maintenance or safety</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./17H" data-filter="match-content">17H</a>
@@ -1010,7 +1027,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Waste tipping at a mine</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./17I" data-filter="match-content">17I</a>
@@ -1020,7 +1037,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Waste tipping from a mine on sites used since 1948</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./17J" data-filter="match-content">17J</a>
@@ -1030,7 +1047,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Temporary use of land etc for mineral exploration</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./17K" data-filter="match-content">17K</a>
@@ -1040,7 +1057,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Use of land etc for mineral exploration</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./17L" data-filter="match-content">17L</a>
@@ -1050,7 +1067,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Removal of material from a stockpile</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./17M" data-filter="match-content">17M</a>
@@ -1060,7 +1077,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Removal of material from mineral-working deposits</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./18A" data-filter="match-content">18A</a>
@@ -1070,7 +1087,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Development under local or private Acts or Order</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./18B" data-filter="match-content">18B</a>
@@ -1080,7 +1097,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Development at amusement parks</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./19A" data-filter="match-content">19A</a>
@@ -1090,7 +1107,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">General development by the Crown</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./19B" data-filter="match-content">19B</a>
@@ -1100,7 +1117,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Extension or alteration of an operational Crown building</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./19C" data-filter="match-content">19C</a>
@@ -1110,7 +1127,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Developments on operational Crown land</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./19D" data-filter="match-content">19D</a>
@@ -1120,7 +1137,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Hard surfaces for operational Crown buildings</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./19E" data-filter="match-content">19E</a>
@@ -1130,7 +1147,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Development on operational Crown land relating to an airbase</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./19F" data-filter="match-content">19F</a>
@@ -1140,7 +1157,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Development on operational land within an airbase</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./19G" data-filter="match-content">19G</a>
@@ -1150,7 +1167,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Development on operational land outside an airbase</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./19H" data-filter="match-content">19H</a>
@@ -1160,7 +1177,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Development on operational land by the Crown connected with air traffic services</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./19I" data-filter="match-content">19I</a>
@@ -1170,7 +1187,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Emergency use of land by the Crown connected with air traffic services</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./19J" data-filter="match-content">19J</a>
@@ -1180,7 +1197,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Use of land etc by the Crown connected with air traffic services</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./19K" data-filter="match-content">19K</a>
@@ -1190,7 +1207,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Use of land by the Crown in relation to surveys etc</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./19L" data-filter="match-content">19L</a>
@@ -1200,7 +1217,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Use of buildings by the Crown on an airbase connected to air transport services etc</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./19M" data-filter="match-content">19M</a>
@@ -1210,7 +1227,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Development by the Crown on operational Crown land connected to rail</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./19N" data-filter="match-content">19N</a>
@@ -1220,7 +1237,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Development by the Crown on operational Crown land connected to shipping etc</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./19O" data-filter="match-content">19O</a>
@@ -1230,7 +1247,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Use of land by the Crown for spreading of dredged material</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./19P" data-filter="match-content">19P</a>
@@ -1240,7 +1257,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Development by the Crown on operational Crown land etc relating to aids to shipping</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./19R" data-filter="match-content">19R</a>
@@ -1250,7 +1267,7 @@
     <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Erection etc of gates, fences etc by the Crown for national security purposes</p>
   </td>
 </tr>
-<tr class=""  data-filter="item">
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./19S" data-filter="match-content">19S</a>
@@ -1262,8 +1279,8 @@
 </tr></tbody>
 </table>
 
+        </div>
 
-    </div>
 
         </main>
       </div>
@@ -1352,6 +1369,15 @@
             list_section_selector: '.index-list-wrapper',
             count_wrapper_selector: '.count-wrapper'
         })
+        </script>
+        <script>
+            const showCounts = true
+            const $hist = document.querySelector('[data-historical="form"]');
+            new window.DLFrontend.FilterHistorical($hist).init({
+                triggerEvents: "list:filtered",
+                listWrapperSelector: '.index-list-wrapper',
+                showCountsWhenShowingAll: showCounts
+            })
         </script>
 
   </body>
