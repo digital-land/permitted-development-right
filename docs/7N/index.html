@@ -124,7 +124,7 @@
                 </a>
             </li><li class="dlf-subnav__list-item">
                 <a class="dlf-subnav__list-item__link" href="#referenced-by" data-module-sub-nav="tab">
-                Referenced by (0)
+                0 References
                 </a>
             </li>
         </ul>
@@ -134,9 +134,9 @@
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/permitted-development-right/7N</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">documentation-url
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/7/crossheading/class-n-hard-surfaces-for-schools-colleges-universities-or-hospitals/made">https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/7/crossheading/class-n-hard-surfaces-for-schools-colleges-universities-or-hospitals/made</a>            </dd>
+            <dd class="govuk-summary-list__value">                Hard surfaces for schools, colleges, universities or hospitals            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">permitted-development-right
             </dt>
@@ -146,9 +146,9 @@
             </dt>
             <dd class="govuk-summary-list__value">                Development consisting of: (a) the provision of a hard surface within the curtilage of any school, university or hospital to be used for the purposes of that school, college, university or hospital; or (b) the replacement in whole or in part of such a surface            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">documentation-url
             </dt>
-            <dd class="govuk-summary-list__value">                Hard surfaces for schools, colleges, universities or hospitals            </dd>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/7/crossheading/class-n-hard-surfaces-for-schools-colleges-universities-or-hospitals/made">https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/7/crossheading/class-n-hard-surfaces-for-schools-colleges-universities-or-hospitals/made</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -177,20 +177,20 @@
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>name</th>
             <th>description</th>
             <th>permitted-development-right</th>
             <th>documentation-url</th>
-            <th>name</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>1995-01-01</td>
             <td><a href="https://github.com/digital-land/permitted-development-right-collection/tree/main/transformed/permitted-development-right/61d343a14c9cafde6f71027393468fbd7815ed8c02f3b8bd40316933cb273b50.csv#L76">61d343a14c9c...</a></td>
             <td>75</td>
+                <td>Hard surfaces for schools, colleges, universities or hospitals</td> 
                 <td>Development consisting of: (a) the provision of a hard surface within the curtilage of any school, university or hospital to be used for the purposes of that school, college, university or hospital; or (b) the replacement in whole or in part of such a surface</td> 
                 <td>7N</td> 
                 <td>https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/7/crossheading/class-n-hard-surfaces-for-schools-colleges-universities-or-hospitals/made</td> 
-                <td>Hard surfaces for schools, colleges, universities or hospitals</td> 
         </tr>    </tbody>
 </table>
 
@@ -296,8 +296,24 @@
 	</script>
 
 <script>
+    const datasetName = "permitted-development-right"
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
-    const mapComponent = new DLMaps.Map($mapElement).init({})
+    const $nationalMapLink = document.querySelector('.dl-link-national-map')
+    const mapComponent = new DLMaps.Map($mapElement).init({
+        initGeoJsonLoadCallback: function (urls, featureGroup) {
+            console.log("initial load completed")
+            // do we need to check there isn't more than one shape?
+            const center = featureGroup.getBounds().getCenter()
+            const zoom = mapComponent.map.getZoom()
+            let url = `http://digital-land.github.io/leaflet-spike/?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+            console.log(url)
+            if ($nationalMapLink) {
+                // only show this for the datasets we've added to the national map
+                $nationalMapLink.href = url
+                $nationalMapLink.classList.remove("js-hidden")
+            }
+        }
+    })
 </script>
 <script>
     // Initialise back to top

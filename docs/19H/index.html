@@ -124,7 +124,7 @@
                 </a>
             </li><li class="dlf-subnav__list-item">
                 <a class="dlf-subnav__list-item__link" href="#referenced-by" data-module-sub-nav="tab">
-                Referenced by (0)
+                0 References
                 </a>
             </li>
         </ul>
@@ -181,22 +181,22 @@
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>documentation-url</th>
-            <th>start-date</th>
             <th>name</th>
-            <th>description</th>
+            <th>start-date</th>
+            <th>documentation-url</th>
             <th>permitted-development-right</th>
+            <th>description</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-12-31</td>
             <td><a href="https://github.com/digital-land/permitted-development-right-collection/tree/main/transformed/permitted-development-right/61d343a14c9cafde6f71027393468fbd7815ed8c02f3b8bd40316933cb273b50.csv#L150">61d343a14c9c...</a></td>
             <td>149</td>
-                <td>https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/19/crossheading/class-h-development-on-operational-land-by-the-crown-connected-with-air-traffic-services/made</td> 
-                <td>1995-01-01</td> 
                 <td>Development on operational land by the Crown connected with air traffic services</td> 
-                <td>The carrying out on operational land, by or on behalf of the Crown, of development in connection with the provision of air traffic services</td> 
+                <td>1995-01-01</td> 
+                <td>https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/19/crossheading/class-h-development-on-operational-land-by-the-crown-connected-with-air-traffic-services/made</td> 
                 <td>19H</td> 
+                <td>The carrying out on operational land, by or on behalf of the Crown, of development in connection with the provision of air traffic services</td> 
         </tr>    </tbody>
 </table>
 
@@ -302,8 +302,24 @@
 	</script>
 
 <script>
+    const datasetName = "permitted-development-right"
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
-    const mapComponent = new DLMaps.Map($mapElement).init({})
+    const $nationalMapLink = document.querySelector('.dl-link-national-map')
+    const mapComponent = new DLMaps.Map($mapElement).init({
+        initGeoJsonLoadCallback: function (urls, featureGroup) {
+            console.log("initial load completed")
+            // do we need to check there isn't more than one shape?
+            const center = featureGroup.getBounds().getCenter()
+            const zoom = mapComponent.map.getZoom()
+            let url = `http://digital-land.github.io/leaflet-spike/?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+            console.log(url)
+            if ($nationalMapLink) {
+                // only show this for the datasets we've added to the national map
+                $nationalMapLink.href = url
+                $nationalMapLink.classList.remove("js-hidden")
+            }
+        }
+    })
 </script>
 <script>
     // Initialise back to top
