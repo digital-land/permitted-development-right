@@ -134,6 +134,14 @@
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/permitted-development-right/19N</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                1995-01-01            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">permitted-development-right
+            </dt>
+            <dd class="govuk-summary-list__value">                <span class="dl-select-all">19N</span>            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Development by the Crown on operational Crown land connected to shipping etc            </dd>
@@ -145,14 +153,6 @@
             <dt class="govuk-summary-list__key">documentation-url
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/19/crossheading/class-n-development-by-the-crown-on-operational-crown-land-connected-to-shipping-etc/made">https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/19/crossheading/class-n-development-by-the-crown-on-operational-crown-land-connected-to-shipping-etc/made</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">permitted-development-right
-            </dt>
-            <dd class="govuk-summary-list__value">                <span class="dl-select-all">19N</span>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                1995-01-01            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -181,22 +181,22 @@
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>start-date</th>
             <th>permitted-development-right</th>
+            <th>documentation-url</th>
+            <th>start-date</th>
             <th>description</th>
             <th>name</th>
-            <th>documentation-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-12-31</td>
             <td><a href="https://github.com/digital-land/permitted-development-right-collection/tree/main/transformed/permitted-development-right/61d343a14c9cafde6f71027393468fbd7815ed8c02f3b8bd40316933cb273b50.csv#L156">61d343a14c9c...</a></td>
             <td>155</td>
-                <td>1995-01-01</td> 
                 <td>19N</td> 
+                <td>https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/19/crossheading/class-n-development-by-the-crown-on-operational-crown-land-connected-to-shipping-etc/made</td> 
+                <td>1995-01-01</td> 
                 <td>Development by or on behalf of the Crown or its lessees on operational Crown land where the development is required: (a) for the purposes of shipping; or (b) at a dock, pontoon or harbour in connection with the embarking, disembarking, loading, discharging or transport of military or civilian personnel, military equipment, munitions, or other items.</td> 
                 <td>Development by the Crown on operational Crown land connected to shipping etc</td> 
-                <td>https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/19/crossheading/class-n-development-by-the-crown-on-operational-crown-land-connected-to-shipping-etc/made</td> 
         </tr>    </tbody>
 </table>
 
@@ -311,7 +311,7 @@
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()
             const zoom = mapComponent.map.getZoom()
-            let url = `http://digital-land.github.io/leaflet-spike/?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+            let url = `http://digital-land.github.io/map?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
             console.log(url)
             if ($nationalMapLink) {
                 // only show this for the datasets we've added to the national map
