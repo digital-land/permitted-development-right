@@ -138,14 +138,6 @@
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/14/crossheading/class-c-installation-or-alteration-etc-of-ground-source-heat-pumps-on-domestic-premises/made">https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/14/crossheading/class-c-installation-or-alteration-etc-of-ground-source-heat-pumps-on-domestic-premises/made</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">permitted-development-right
-            </dt>
-            <dd class="govuk-summary-list__value">                <span class="dl-select-all">14C</span>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                1995-01-01            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Installation or alteration etc of ground source heat pumps on domestic premises            </dd>
@@ -153,6 +145,14 @@
             <dt class="govuk-summary-list__key">description
             </dt>
             <dd class="govuk-summary-list__value">                The installation, alteration or replacement of a microgeneration ground source heat pump within the curtilage of a dwellinghouse or a block of flats.            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                1995-01-01            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">permitted-development-right
+            </dt>
+            <dd class="govuk-summary-list__value">                <span class="dl-select-all">14C</span>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -181,22 +181,22 @@
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>permitted-development-right</th>
-            <th>description</th>
+            <th>documentation-url</th>
             <th>start-date</th>
             <th>name</th>
-            <th>documentation-url</th>
+            <th>description</th>
+            <th>permitted-development-right</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-12-31</td>
             <td><a href="https://github.com/digital-land/permitted-development-right-collection/tree/main/transformed/permitted-development-right/61d343a14c9cafde6f71027393468fbd7815ed8c02f3b8bd40316933cb273b50.csv#L108">61d343a14c9c...</a></td>
             <td>107</td>
-                <td>14C</td> 
-                <td>The installation, alteration or replacement of a microgeneration ground source heat pump within the curtilage of a dwellinghouse or a block of flats.</td> 
+                <td>https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/14/crossheading/class-c-installation-or-alteration-etc-of-ground-source-heat-pumps-on-domestic-premises/made</td> 
                 <td>1995-01-01</td> 
                 <td>Installation or alteration etc of ground source heat pumps on domestic premises</td> 
-                <td>https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/14/crossheading/class-c-installation-or-alteration-etc-of-ground-source-heat-pumps-on-domestic-premises/made</td> 
+                <td>The installation, alteration or replacement of a microgeneration ground source heat pump within the curtilage of a dwellinghouse or a block of flats.</td> 
+                <td>14C</td> 
         </tr>    </tbody>
 </table>
 
@@ -306,7 +306,7 @@
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const $nationalMapLink = document.querySelector('.dl-link-national-map')
     const mapComponent = new DLMaps.Map($mapElement).init({
-        initGeoJsonLoadCallback: function (urls, featureGroup) {
+        initZoomCallback: function (featureGroup) {
             console.log("initial load completed")
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()

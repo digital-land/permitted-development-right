@@ -134,21 +134,21 @@
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/permitted-development-right/9C</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">permitted-development-right
-            </dt>
-            <dd class="govuk-summary-list__value">                <span class="dl-select-all">9C</span>            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Tramway or road transport undertakings            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">description
+            </dt>
+            <dd class="govuk-summary-list__value">                Development required for the purposes of the carrying on of any tramway or road transport undertaking consisting of: (a) the installation of posts, underground cables, feeder pillars or transformer boxes in, on, over or adjacent to a highway for the purpose of supplying current to public service vehicles; (b) the installation of tramway tracks, drains and pipes in connection with such tracks for the working of tramways; (c) the installation of telephone cables and apparatus, stop posts and signs required in connection with the operation of public service vehicles; (d) the erection or construction and the maintenance, (e) any other development on operational land of the undertaking            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">documentation-url
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/9/crossheading/class-c-tramway-or-road-transport-undertakings/made">https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/9/crossheading/class-c-tramway-or-road-transport-undertakings/made</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">description
+            <dt class="govuk-summary-list__key">permitted-development-right
             </dt>
-            <dd class="govuk-summary-list__value">                Development required for the purposes of the carrying on of any tramway or road transport undertaking consisting of: (a) the installation of posts, underground cables, feeder pillars or transformer boxes in, on, over or adjacent to a highway for the purpose of supplying current to public service vehicles; (b) the installation of tramway tracks, drains and pipes in connection with such tracks for the working of tramways; (c) the installation of telephone cables and apparatus, stop posts and signs required in connection with the operation of public service vehicles; (d) the erection or construction and the maintenance, (e) any other development on operational land of the undertaking            </dd>
+            <dd class="govuk-summary-list__value">                <span class="dl-select-all">9C</span>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -177,20 +177,20 @@
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>name</th>
-            <th>permitted-development-right</th>
             <th>description</th>
             <th>documentation-url</th>
+            <th>name</th>
+            <th>permitted-development-right</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>1995-01-01</td>
             <td><a href="https://github.com/digital-land/permitted-development-right-collection/tree/main/transformed/permitted-development-right/61d343a14c9cafde6f71027393468fbd7815ed8c02f3b8bd40316933cb273b50.csv#L93">61d343a14c9c...</a></td>
             <td>92</td>
-                <td>Tramway or road transport undertakings</td> 
-                <td>9C</td> 
                 <td>Development required for the purposes of the carrying on of any tramway or road transport undertaking consisting of: (a) the installation of posts, underground cables, feeder pillars or transformer boxes in, on, over or adjacent to a highway for the purpose of supplying current to public service vehicles; (b) the installation of tramway tracks, drains and pipes in connection with such tracks for the working of tramways; (c) the installation of telephone cables and apparatus, stop posts and signs required in connection with the operation of public service vehicles; (d) the erection or construction and the maintenance, (e) any other development on operational land of the undertaking</td> 
                 <td>https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/9/crossheading/class-c-tramway-or-road-transport-undertakings/made</td> 
+                <td>Tramway or road transport undertakings</td> 
+                <td>9C</td> 
         </tr>    </tbody>
 </table>
 
@@ -300,7 +300,7 @@
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const $nationalMapLink = document.querySelector('.dl-link-national-map')
     const mapComponent = new DLMaps.Map($mapElement).init({
-        initGeoJsonLoadCallback: function (urls, featureGroup) {
+        initZoomCallback: function (featureGroup) {
             console.log("initial load completed")
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()

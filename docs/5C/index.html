@@ -181,22 +181,22 @@
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>permitted-development-right</th>
-            <th>description</th>
+            <th>documentation-url</th>
             <th>start-date</th>
             <th>name</th>
-            <th>documentation-url</th>
+            <th>description</th>
+            <th>permitted-development-right</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-12-31</td>
             <td><a href="https://github.com/digital-land/permitted-development-right-collection/tree/main/transformed/permitted-development-right/61d343a14c9cafde6f71027393468fbd7815ed8c02f3b8bd40316933cb273b50.csv#L52">61d343a14c9c...</a></td>
             <td>51</td>
-                <td>5C</td> 
-                <td>The use of land by members of a recreational organisation for the purposes of recreation or instruction, and the erection or placing of tents on the land for the purposes of the use</td> 
+                <td>https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/5/crossheading/class-c-use-of-land-by-members-of-certain-recreational-organisations/made</td> 
                 <td>1995-01-01</td> 
                 <td>Use of land by members of certain recreational organisations</td> 
-                <td>https://www.legislation.gov.uk/uksi/2015/596/schedule/2/part/5/crossheading/class-c-use-of-land-by-members-of-certain-recreational-organisations/made</td> 
+                <td>The use of land by members of a recreational organisation for the purposes of recreation or instruction, and the erection or placing of tents on the land for the purposes of the use</td> 
+                <td>5C</td> 
         </tr>    </tbody>
 </table>
 
@@ -306,7 +306,7 @@
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const $nationalMapLink = document.querySelector('.dl-link-national-map')
     const mapComponent = new DLMaps.Map($mapElement).init({
-        initGeoJsonLoadCallback: function (urls, featureGroup) {
+        initZoomCallback: function (featureGroup) {
             console.log("initial load completed")
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()
